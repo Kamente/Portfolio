@@ -5,7 +5,9 @@
 body{
     padding: 60px;
 }
-
+.color{
+    color: black;
+}
 .container{
     width:70%;
     margin: auto;
