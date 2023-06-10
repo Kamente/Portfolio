@@ -45,11 +45,41 @@ a {
 }
 
 .small-bio{
-    margin-top: 150px;
+    /* margin-top: 150px; */
     width: 80%;
     line-height: 30px;
 }
 
 .small-bio h1{
+    font-size: 1.8rem;
     line-height: 50px;
+}
+
+.small-bio h2, .small-bio p{
+    font-size: 1.3rem;
+}
+
+.img{
+    width: 350px;
+    height: 350px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: rgb(122, 144, 153);
+    border-radius: 20px;
+    margin:100px;
+}
+
+.img-me {
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 0.2s ease-in-out;
+    border-radius: 20px;
+    background-color: rgb(38, 75, 91);
+    transform: rotate(10deg);
+
+}
+
+.img-me:hover{
+    transform: rotate(0);
 }
