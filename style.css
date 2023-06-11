@@ -274,6 +274,7 @@ textarea {
 
 #contacts {
     margin-top: 4em;
+    padding-right: 200px;
 }
 
 .footer {
@@ -305,4 +306,5 @@ textarea {
 }
 .socials{
     padding-top: 35px;
+    padding-left: 100px;
 }
