@@ -8,27 +8,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/99d52d8e66.js" crossorigin="anonymous"></script>
     <title>My Portfolio</title>
 </head>
 
 <body>
     <div class="container">
         <div class="nav-bar">
-            <h1><span class="color">My Port</span>folio</h1>
+            <a href="/">
+                <h1><span class="color">My Port</span>folio</h1>
+            </a>
             <div>
-                <li><a href="bio.html" class="nav-link">Bio</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="#bio" class="nav-link">Bio</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contacts" class="nav-link">Contact</a></li>
             </div>
         </div>
 
         <div class="small-bio">
             <h1>Hey there,<img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"> <br />My
-                name is Justin.</h1>
-            <div class="img">
-                <img class="img-me" src="./assets/me.png">
+                name <span id="name"></span></h1>
+            <div class="img-wrapper">
+                <div class="img">
+                    <img class="img-me" src="./assets/me.png">
+                </div>
+                <div class="gif">
+                    <img src="./assets/lf20_vvmyca9c.gif">
+                </div>
             </div>
 
+
+            <div id="about"></div>
             <h2>About me</h2>
             <p> I am a dedicated and experienced software engineer driven by a passion for developing software solutions
                 Having strong foundation in programming and computer science i love developing scalable software
@@ -37,37 +48,105 @@
                 skills and performance.
             </p>
         </div>
+        <div id="bio" class="bio">
+            <h2>Bio</h2>
+            <p> I am a dedicated and experienced software engineer driven by a passion for developing software solutions
+                Having strong foundation in programming and computer science i love developing scalable software
+                applications.
+                I am always eager to learn latest technologies trends and collaborate with others to improve on my
+                skills and performance.
+            </p>
+            <div class="bio-wrapper">
+                <div class="tl left">
+                    <div class="bio-details">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, sint sequi. Animi quaerat
+                        eveniet beatae, illo, ut ipsam quas maxime a libero reiciendis quae suscipit dolor rerum officia
+                        quasi. Ullam?
+                    </div>
+                    <div class="bio-details">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, sint sequi. Animi quaerat
+                        eveniet beatae, illo, ut ipsam quas maxime a libero reiciendis quae suscipit dolor rerum officia
+                        quasi. Ullam?
+                    </div>
+                </div>
+                <div class="tl right">
+                    <div class="bio-details">
+                    
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, sint sequi. Animi quaerat
+                        eveniet beatae, illo, ut ipsam quas maxime a libero reiciendis quae suscipit dolor rerum officia
+                        quasi. Ullam?
+                    </div>
+                    <div class="bio-details">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, sint sequi. Animi quaerat
+                        eveniet beatae, illo, ut ipsam quas maxime a libero reiciendis quae suscipit dolor rerum officia
+                        quasi. Ullam?
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <div class="projects">
+        <div class="projects" id="projects">
             <h2>Projects</h2>
             <div class="cards">
                 <div class="card">
                     <div class="card-img"><img src="./assets/bank.png"></div>
                     <div class="card-description">
                         <h3>Bank</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolores excepturi voluptatibus illo, vitae delectus nostrum unde amet deleniti deserunt blanditiis mollitia ad? Accusamus minus quos odit aliquam maiores nam?</p>
-                        <a href="" class="demo">View demo</a> <a href="" class="source">View source</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolores excepturi
+                            voluptatibus illo, vitae delectus nostrum unde amet deleniti deserunt blanditiis mollitia
+                            ad? Accusamus minus quos odit aliquam maiores nam?</p>
+                        <a href="https://kamente.github.io/Banking-System./"><i class="fa fa-laptop"></i></a> <a
+                            href="https://github.com/Kamente/Banking-System./"><i class="fa fa-github"></i></a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-img"><img src="./assets/kitten.png"></div>
                     <div class="card-description">
                         <h3>Kitten</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolores excepturi voluptatibus illo, vitae delectus nostrum unde amet deleniti deserunt blanditiis mollitia ad? Accusamus minus quos odit aliquam maiores nam?</p>
-                        <a href="" class="demo">View demo</a> <a href="" class="source">View source</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolores excepturi
+                            voluptatibus illo, vitae delectus nostrum unde amet deleniti deserunt blanditiis mollitia
+                            ad? Accusamus minus quos odit aliquam maiores nam?</p>
+                        <a href="https://kittenns.vercel.app/"><i class="fa fa-laptop"></i></a> <a
+                            href="https://github.com/Kamente/Kittens"><i class="fa fa-github"></i></a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-img"><img src="./assets/rockerstar.png"></div>
                     <div class="card-description">
-                        <h3>Rocerster</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolores excepturi voluptatibus illo, vitae delectus nostrum unde amet deleniti deserunt blanditiis mollitia ad? Accusamus minus quos odit aliquam maiores nam?</p>
-                        <a href="" class="demo">View demo</a> <a href="" class="source">View source</a>
+                        <h3>Rocarster</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolores excepturi
+                            voluptatibus illo, vitae delectus nostrum unde amet deleniti deserunt blanditiis mollitia
+                            ad? Accusamus minus quos odit aliquam maiores nam?</p>
+                        <a href="https://kamente.github.io/Rocarstor--Car-Website/"><i class="fa fa-laptop"></i></a>
+                        <a href="https://kamente.github.io/Rocarstor--Car-Website/"><i class="fa fa-github"></i></a>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="footer">
+        <div class="socials">
+
+        </div>
+        <div id="contacts">
+            <h1 id="h1">Let's Get in Touch</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+
+
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
