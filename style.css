@@ -5,7 +5,7 @@
 
 body {
     min-height: 100vh;
-    background-color: #b3b2b2;
+    /* background-color: #b3b2b2; */
     /* background: linear-gradient(to bottom,
             transparent, rgb(85, 88, 90)) rgb(214, 219, 220); */
 
@@ -179,4 +179,20 @@ textarea {
 
 .card-description h3{
     text-align: center;
+}
+
+.demo{
+    font-size: 0.8em;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: blue;
+    margin-right:30px;
+}
+
+.source{
+    font-size: 0.8em;
+    padding: 5px 10px;
+    border:2px solid blue;
+    border-radius: 8px;
 }
