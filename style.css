@@ -56,6 +56,7 @@ a {
 .nav-link:hover {
     color: white;
     background-color: blue;
+    transition: ease-in-out 0.5s;
 }
 
 #name {
@@ -92,19 +93,19 @@ a {
     border-left: 2px solid blue;
 }
 
+
 .left div::after {
-    content: " ";
+    content: "hello";
     height: 0;
-    position: absolute;
-    top: 22px;
     width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid red;
-    border-width: 10px 0 10px 10px;
-    border-color: red;
+    position: relative;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
 
 }
+
+
 
 .tl div {
     color: white;
@@ -136,7 +137,7 @@ a {
 }
 
 .img {
-    width: 300px;
+    width: 350px;
     height: 400px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: rgb(122, 144, 153);
@@ -298,4 +299,10 @@ textarea {
 
 .fa-github {
     font-size: larger;
+}
+.socials ul li{
+    list-style: none;
+}
+.socials{
+    padding-top: 35px;
 }

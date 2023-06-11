@@ -3,6 +3,14 @@ submit.addEventListener("click", function () {
     alert("Thanks for submitting");
 });
 
+
+dontGo({
+	title: 'Comeback!',
+	faviconSrc: './assets/faviconAlt.png',
+	timeout: 100
+});
+
+
 let nam = document.querySelector('span#name');
 let setName = "Justin";
 let i = 0;
