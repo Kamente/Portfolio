@@ -1,7 +1,8 @@
 const submit = document.getElementById("submit");
 submit.addEventListener("click", function () {
-    alert("Thanks for submitting");
+    alert("Thanks for submitting, Have a nice day ");
 });
+
 
 
 dontGo({
@@ -59,3 +60,4 @@ messageF.addEventListener('submit', function(event) {
     messageF.reset();
 
 });
+

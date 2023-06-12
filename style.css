@@ -132,12 +132,12 @@ a {
 }
 
 .small-bio h2,
-.small-bio p,
 .bio h2 {
     font-size: 1.2rem;
 }
 
-.bio p{
+.bio p,
+.small-bio p {
     font-size: 1.2rem;
 }
 
@@ -228,12 +228,18 @@ textarea {
 
 .projects h2,
 .small-bio h2,
-.bio h2 {
+.bio h2{
     padding: 5px 10px;
     border-bottom: 3px solid blue;
     width: fit-content;
 }
-#educ{
+
+.bio-wrapper h2{
+    font-size: 10px;
+}
+
+
+#educ {
     border-bottom: 3px blue;
 }
 
@@ -244,7 +250,7 @@ textarea {
     transition: ease-in-out 2s;
 }
 
-.projects .cards:hover{
+.projects .cards:hover {
     transition: ease-in-out 2s;
 }
 
@@ -256,7 +262,14 @@ textarea {
     padding: 20px;
     margin-top: 2em;
     border-radius: 20px;
+    transition: 0.5s;
 }
+
+
+.card:hover {
+    transform: scale(1.1);
+}
+
 
 .card-img img {
     width: 100%;
@@ -284,7 +297,7 @@ textarea {
     border-radius: 8px;
 }
 
-#contacts {
+.contacts {
     margin-top: 4em;
     padding-right: 200px;
 }
@@ -292,7 +305,6 @@ textarea {
 .footer {
     height: fit-content;
     display: flex;
-    justify-content: space-between;
     justify-content: space-between;
     background-color: #ccc;
     position: relative;
@@ -313,11 +325,122 @@ textarea {
 .fa-github {
     font-size: larger;
 }
-.socials ul li{
+
+.socials ul li {
     list-style: none;
 }
-.socials{
+
+.socials {
     padding-top: 35px;
     padding-left: 100px;
 }
 
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+        display: block;
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        position: relative;
+    }
+
+    .nav-bar h1 {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-bar div {
+        justify-content: space-between;
+    }
+
+    .small-bio h1 {
+        font-size: 30px;
+    }
+
+    .img {
+        height: 200px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .gif {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer {
+        display: flex;
+        gap: 50px;
+        left: 0;
+    }
+
+    .tl div {
+        color: white;
+        width: 120px;
+        height: 180px;
+    }
+
+    .bio-wrapper {
+        display: flex;
+        width: 100%;
+        height: 570px;
+        margin-bottom: 100px;
+    }
+
+    .bio-wrapper p {
+        font-size: 10px;
+    }
+
+    .card {
+        height: 100%;
+        width: 100%;
+    }
+
+    .bio p,
+    .small-bio p {
+        font-size: 1.0rem;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .socials ul {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .socials li {
+        margin-right: -10px;
+    }
+
+    #contacts {
+        display: block;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .socials {
+        order: 2;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contacts {
+        order: 1;
+    }
+
+    #git {
+        height: 70px;
+        width: 70px;
+    }
+}
