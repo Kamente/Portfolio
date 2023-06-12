@@ -38,3 +38,21 @@ setInterval(() => {
         i--;
     }
 }, 200);
+
+const messageF = document.querySelector('form');
+
+messageF.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    const message = document.getElementById('message');
+
+    constNewessage = {
+        name: name,
+        email: email,
+        message: message
+    };
+
+    messageF.reset();
+
+});
