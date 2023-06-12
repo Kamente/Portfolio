@@ -12,8 +12,9 @@ dontGo({
 
 
 let nam = document.querySelector('span#name');
-let setName = "Justin";
+let setName = "Kamente";
 let i = 0;
+let j = 0;
 nam.innerHTML = "";
 
 let direction = "f"
@@ -38,6 +39,8 @@ setInterval(() => {
         i--;
     }
 }, 200);
+
+
 
 const messageF = document.querySelector('form');
 

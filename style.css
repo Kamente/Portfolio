@@ -73,7 +73,7 @@ a {
 .bio-wrapper {
     display: flex;
     width: 60%;
-    height: 800px;
+    height: 600px;
     margin: auto;
 }
 
@@ -132,7 +132,12 @@ a {
 }
 
 .small-bio h2,
-.small-bio p {
+.small-bio p,
+.bio h2 {
+    font-size: 1.2rem;
+}
+
+.bio p{
     font-size: 1.2rem;
 }
 
@@ -159,7 +164,7 @@ a {
 }
 
 .img-me:hover {
-    transform: rotate(0);
+    transform: rotate(0deg);
 }
 
 body {
@@ -228,12 +233,19 @@ textarea {
     border-bottom: 3px solid blue;
     width: fit-content;
 }
-
+#educ{
+    border-bottom: 3px blue;
+}
 
 .projects .cards {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    transition: ease-in-out 2s;
+}
+
+.projects .cards:hover{
+    transition: ease-in-out 2s;
 }
 
 .card {
@@ -308,3 +320,4 @@ textarea {
     padding-top: 35px;
     padding-left: 100px;
 }
+
