@@ -227,13 +227,13 @@ textarea {
 
 .projects h2,
 .small-bio h2,
-.bio h2{
+.bio h2 {
     padding: 5px 10px;
     border-bottom: 3px solid blue;
     width: fit-content;
 }
 
-.bio-wrapper h2{
+.bio-wrapper h2 {
     font-size: 10px;
 }
 
@@ -296,10 +296,10 @@ textarea {
     border-radius: 8px;
 }
 
-.contacts {
+/* .contacts {
     margin-top: 4em;
     padding-right: 200px;
-}
+} */
 
 .footer {
     height: fit-content;
@@ -442,12 +442,18 @@ textarea {
         height: 70px;
         width: 70px;
     }
-    #img{
+
+    #img {
         height: 60px;
         width: 60px;
     }
-    .small-bio h1{
+
+    .small-bio h1 {
         font-size: 16px;
+    }
+
+    .contacts {
+        height: 100px;
     }
 
 }
