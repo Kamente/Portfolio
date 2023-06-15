@@ -379,8 +379,10 @@ textarea {
 
     .tl div {
         color: white;
-        width: 120px;
-        height: 180px;
+        display: flex;
+        flex-direction: row;
+        width: 150px;
+        height: 100px;
     }
 
     .bio-wrapper {
@@ -455,5 +457,4 @@ textarea {
     .contacts {
         height: 100px;
     }
-
 }
