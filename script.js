@@ -6,16 +6,15 @@ submit.addEventListener("click", function () {
 
 
 dontGo({
-	title: 'Comeback!',
-	faviconSrc: './assets/faviconAlt.png',
-	timeout: 100
+    title: 'Comeback!',
+    faviconSrc: './assets/faviconAlt.png',
+    timeout: 100
 });
 
 
 let nam = document.querySelector('span#name');
 let setName = "Kamente";
 let i = 0;
-let j = 0;
 nam.innerHTML = "";
 
 let direction = "f"
@@ -42,10 +41,9 @@ setInterval(() => {
 }, 200);
 
 
-
 const messageF = document.querySelector('form');
 
-messageF.addEventListener('submit', function(event) {
+messageF.addEventListener('submit', function (event) {
     event.preventDefault();
     const name = document.getElementById('name');
     const email = document.getElementById('email');
@@ -61,3 +59,13 @@ messageF.addEventListener('submit', function(event) {
 
 });
 
+window.addEventListener("scroll", function () {
+    const scrollPosition = window.scrollY;
+    const triggerPosition = 100;
+
+    if (scrollPosition > triggerPosition) {
+        const scrollPercentage = ((scrollPosition - triggerPosition) / (document.body.offsetHeight - window.innerWidth)) * 100;
+        const line = document.querySelector(".line");
+        line.style.width = `${scrollPercentage}%`;
+    }
+});

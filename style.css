@@ -14,6 +14,17 @@ body {
 
 }
 
+.line {
+    position: fixed;
+    height: 2px;
+    width: 0;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+
 .color {
     color: black;
 }
@@ -269,7 +280,6 @@ textarea {
     transform: scale(1.1);
 }
 
-
 .card-img img {
     width: 100%;
     height: 100%;
@@ -457,7 +467,8 @@ textarea {
     .contacts {
         height: 100px;
     }
-    .bio-wrapper{
+
+    .bio-wrapper {
         height: 400px;
     }
 }

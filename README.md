@@ -1,18 +1,23 @@
 # Project Name
 
 ### Portfolio
-### Author 
-``` 
+
+### Author
+
+```
 
 JUSTIN KAMENTE
 
 ```
+
 ## Project Description
+
 ```
 Welcome to my portfolio repository! This repository serves as a centralized hub to showcase my coding projects, skills, and accomplishments. Here, you will find a collection of my best work, demonstrating my expertise in various programming languages, frameworks, and technologies. 
 ```
 
 ## Project SetUp and Instructions
+
 #### To set up and run the project follo the below steps
 
 ```
@@ -23,7 +28,9 @@ git commit -m "initial commmit"
 git push origin master
 
 ```
+
 ### Technologies Used
+
 ```
 Html
 Javascript
@@ -34,7 +41,8 @@ y
 ```
 
 ### lINK TO LIVE SITE
-##### https://kamente-portfolio.vercel.app/
+
+##### <https://kamente-portfolio.vercel.app/>
 
 ### License
 
