@@ -12,7 +12,7 @@ dontGo({
 });
 
 
-let nam = document.querySelector('span#name');
+let nam = document.getElementById('name');
 let setName = "Kamente";
 let i = 0;
 nam.innerHTML = "";
